@@ -45,8 +45,8 @@ def plot_clusters(data, labels, centroids, k):
         plt.scatter(data[labels == i, 0], data[labels == i, 1], c=colors[i], label=f'Cluster {i + 1}', alpha=0.6)
     plt.scatter(centroids[:, 0], centroids[:, 1], c='black', marker='X', s=200, label='Centroids')
     plt.legend()
-    plt.xlabel('Feature 1')
-    plt.ylabel('Feature 2')
+    plt.xlabel('X 1')
+    plt.ylabel('X 2')
     plt.title(f'K-Means Clustering (k={k})')
     plt.show()
 
